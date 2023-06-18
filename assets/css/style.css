@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* regole valide per tutta la pagina */
+
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -9,19 +11,22 @@ body{
     margin-right: 15vh;
 }
 
+/* topbar della pagina */
 .topbar{
-    margin-bottom: 5em;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 0px 11px 17px 1px rgba(0,0,0,0.09);
+    box-shadow: 0px 11px 17px 1px rgba(191,191,191,0.1);
 }
+
+
 
 .topbar img{
     height: 3rem;
     width: 10rem;
+    cursor: pointer;
 }
 
 .top-right{
@@ -37,6 +42,7 @@ body{
     position: relative;
     right: 100px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 
@@ -49,8 +55,10 @@ body{
     position: relative;
     right: 70px;
     cursor: pointer;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .profile{
@@ -62,6 +70,8 @@ body{
     width: 50px;
     font-size: 30px;
     position: relative;
+    right: 20px;
+    cursor: pointer;
 }
 
 .top-button p{
@@ -74,17 +84,262 @@ body{
     bottom: 24px;
 }
 
-.fa-magnifying-glass{
+.search{
     position: relative;
-    right: 60px;
+    right: 50px;
 }
 
-.fa-bookmark{
+.bookmark{
     position: relative;
-    right: 44px;
+    right: 30px;
 }
 
-.fa-bell{
+.bell{
     position: relative;
     right: 0px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* parte dx della pagina */
+
+.sidebar{
+    border-left-style: solid;
+    position: absolute;
+    left: 1250px;
+    top: 102px;
+    border-left-color: lightgray;
+    border-left-width: 1px;
+}
+
+
+.medium-logo{
+    height: 70px;
+    width: 70px;
+}
+
+.twitter{
+    height: 25px;
+    width: 25px;
+    padding-left: 5px;
+}
+
+.logos span{
+    font-size: 30px;
+    color: gray;
+    font-weight: 50;
+}
+
+.discover{
+    display: flex;
+    text-align: center;
+    position: relative;
+    right: -75px;
+    top: 30px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -7px;
+    bottom: -30px;
+}
+
+.discover span{
+    margin-top: 0;
+    font-weight: 500;
+    position: relative;
+    font-size: 15px;
+    left: -70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: max-content;
+}
+
+.twitter-connect{
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 20px;
+    border-width: 1px;
+    font-size: 18px;
+    position: relative;
+    top: 40px;
+    left: 5px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.twitter-connect img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 30px;
+    bottom: 7px;
+}
+
+.twitter-connect span{
+    font-size: 18px;
+    color: black;
+    position: relative;
+    left: 40px;
+    bottom: 16px;
+    
+}
+
+.later{
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    left: 90px;
+}
+
+.sidebar-top{
+    border-bottom-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    height: 40%;
+    position: relative;
+    left: 100px;
+    width: max-content;
+    padding-bottom: 148px;
+    padding-right: 120px;
+    padding-left: 70px;
+}
+
+.sidebar-mid{
+    margin-top: 5rem;
+    margin-left: 44px;
+    position: sticky;
+    top: 0;
+}
+
+.topics{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topic{
+    background-color: lightgray;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 1%;
+}
+
+.topics-container{
+    margin-bottom: 1rem;
+}
+
+.who-to-follow{
+    margin-top: 3rem;
+    position: relative;
+    left: 181px;
+}
+
+.person img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.who-to-follow h3{
+    position: relative;
+    right: 178px;
+}
+
+.person{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.person img{
+    margin-top: 2rem;
+    position: relative;
+    right: 170px;
+}
+
+.person h2{
+    position: relative;
+    right: 150px;
+    top: 10px;
+}
+
+.person p{
+    position: relative;
+    right: 395px;
+    top: 50px;
+}
+
+.follow{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 14px;
+    position: relative;
+    top: -10px;
+    padding-top: 11px;
+    margin-top: 49px;
+    margin-bottom: 19px;
+}
+
+.follow span{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 53px;
+    font-size: 20px;
+}
+
+.saved{
+    margin-top: 5rem;
+}
+
+.saved img{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 7px;
+}
+
+.grassetto{
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.art-info{
+    color: gray;
+}
+
+.block2{
+    margin-top: 2rem;
+}
+
+.see-all{
+    margin-top: 2rem;
+    color: green;
+    cursor: pointer;
+}
+
+.block2 span{
+    cursor: pointer;
+}
+
+.block1 h3{
+    cursor: pointer;
+}
+
+.bot-menu{
+    color: gray;
+    display: flex;
 }
