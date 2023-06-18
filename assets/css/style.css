@@ -99,10 +99,6 @@ body{
     right: 0px;
 }
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 /* parte dx della pagina */
 
@@ -342,4 +338,92 @@ body{
 .bot-menu{
     color: gray;
     display: flex;
+    justify-content: space-between;
+}
+
+/* parte sx della pagina */
+
+.menu-bar{
+    margin-top: 2rem;
+    font-size: 15px;
+    border-bottom-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin-right: 580px;
+}
+
+.following{
+    color: gray;
+    cursor: pointer;
+}
+
+.for-you{
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+
+.article{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.article img{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 7px;
+}
+
+.article h3{
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 30px;
+    right: 230px;
+    cursor: pointer;
+}
+
+.paragraph{
+    color: gray;
+}
+
+.argument{
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    color: gray;
+    background-color: lightgray;
+}
+
+.images{
+    width: 200px;
+    height: 134px;
+    position: relative;
+    bottom: 1580px;
+    left: 794px;
+}
+
+.images img{
+    padding-bottom: 125px;
+}
+
+.img{
+    margin-top: 7px;
 }
